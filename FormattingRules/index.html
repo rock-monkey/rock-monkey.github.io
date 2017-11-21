@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-    <title><%= page.tag %> | Rockmonkey</title>
+    <title>FormattingRules | Rockmonkey</title>
     <link href="/stylesheets/site.css" rel="stylesheet" />
   </head>
   <body>
@@ -11,7 +11,139 @@
       <h1>RM</h1>
     </header>
     <main>
-      Page: FormattingRules
+      <script type="" id="raw">
+  
+</script>
+
+<article>
+  <header>
+    <h2>FormattingRules</h2>
+  </header>
+  <section>
+    <h4>The Wiki Formatting Guide</h4>Anything between 2 sets of double-quotes is ignored and presented exactly as typed (that means the formatting commands below are ignored whenever surrounded by double double-quotes.)<br />
+Once you&#39;ve read through this, test your formatting skills in the <a href="/SandBox" class="internal">SandBox</a>.<hr /><h4>Basic formatting:</h4>	&quot;&quot;<strong>I&#39;m bold text!</strong>&quot;&quot;<br />
+	<strong>I&#39;m bold text!</strong><br />
+	&quot;&quot;<em>I&#39;m italic text!</em>&quot;&quot;<br />
+	<em>I&#39;m italic text!</em><br />
+	&quot;&quot;And I&#39;m <u>underlined</u>!&quot;&quot;<br />
+	And I&#39;m <u>underlined</u>!<br />
+	&quot;&quot;<pre>monospace text</pre>&quot;&quot;<br />
+	<pre>monospace text</pre><br />
+	&quot;&quot;&#39;&#39;highlight text&#39;&#39;&quot;&quot; (using 2 single-quotes)<br />
+	&#39;&#39;highlight text&#39;&#39;<br />
+	&quot;&quot;<strike>Strike through text</strike>&quot;&quot;<br />
+	<strike>Strike through text</strike><br />
+	&quot;&quot;Press <div class="button">ANY KEY</div>&quot;&quot;<br />
+	Press <div class="button">ANY KEY</div><br />
+	&quot;&quot;<center>Center text</center>&quot;&quot;<br />
+	<center>Center text</center><br />
+ <h4>Headers:</h4>	&quot;&quot;<h1>Really big header</h1>&quot;&quot;<br />
+	<h1>Really big header</h1>	<br />
+	&quot;&quot;<h2>Rather big header</h2>&quot;&quot;<br />
+	<h2>Rather big header</h2>	<br />
+	&quot;&quot;<h3>Medium header</h3>&quot;&quot; <br />
+	<h3>Medium header</h3>	<br />
+	&quot;&quot;<h4>Not-so-big header</h4>&quot;&quot; <br />
+	<h4>Not-so-big header</h4>	<br />
+	&quot;&quot;<h5>Smallish header</h5>&quot;&quot; <br />
+	<h5>Smallish header</h5><h4>Horizontal separator:</h4>	&quot;&quot;----&quot;&quot;<hr /><h4>Forced line break:</h4>	&quot;&quot;---&quot;&quot;<br />
+---<hr /><h4>Lists / Indents:</h4>Indent text using <strong>4</strong> spaces (which will auto-convert into tabs) or using &quot;~&quot;. To make bulleted / ordered lists, use the following codes (you can use 4 spaces instead of &quot;~&quot;):<br />
+&quot;&quot;<ul><li> bulleted list:&quot;&quot;</ul><br />
+	- bulleted list<br />
+	- Line two<br />
+&quot;&quot;~1) numbered list:&quot;&quot;<br />
+	1) numbered list<br />
+	1) Line two<br />
+&quot;&quot;~A) Using uppercase characters:&quot;&quot;<br />
+	A) Using uppercase characters<br />
+	A) Line two<br />
+&quot;&quot;~a) Using lowercase characters:&quot;&quot;<br />
+	a) Using lowercase characters<br />
+	a) Line two<br />
+&quot;&quot;~I) using uppercase roman numerals:&quot;&quot;<br />
+	I) using Latin numbers<br />
+	I) Line two<br />
+&quot;&quot;~i) using lowercase roman numerals:&quot;&quot;<br />
+	i) using Latin numbers<br />
+	i) Line two<hr /><h4>Wiki Extensions:</h4><h5>Images:</h5>To place images on a Wiki page, use:<br />
+&quot;&quot;<a href="/recentchanges"><img src="images/dvdvideo.gif" alt="dvd logo" class="center" /></a>&quot;&quot;<br />
+<a href="/recentchanges"><img src="images/dvdvideo.gif" alt="dvd logo" class="center" /></a><br />
+Links can be external, or internal Wiki links. You don&#39;t have to enter a link at all, and in that case just an image will be inserted. You can also use the classes &#39;left&#39; and &#39;right&#39; to float images left and right. You don&#39;t need to use all those attributes, only url is essential.<br />
+<h5>Tables:</h5>To create a table use this code:<br />
+&quot;&quot;<div>UNKNOWN SHORTCODE: table ({&quot;columns&quot;=&gt;&quot;3&quot;, &quot;cellpadding&quot;=&gt;&quot;1&quot;, &quot;cells&quot;=&gt;&quot;big;green;frogs;yes;yes;no;no;no;###&quot;})</div>&quot;&quot; to give:<br />
+<div>UNKNOWN SHORTCODE: table ({&quot;columns&quot;=&gt;&quot;3&quot;, &quot;cellpadding&quot;=&gt;&quot;1&quot;, &quot;cells&quot;=&gt;&quot;big;green;frogs;yes;yes;no;no;no;###&quot;})</div><br />
+&quot;&quot;###&quot;&quot; means the cell is empty.<br />
+<h5>Coloured Text:</h5>&quot;&quot;<div>UNKNOWN SHORTCODE: colour ({&quot;c&quot;=&gt;&quot;blue&quot;, &quot;text&quot;=&gt;&quot;this is a test.&quot;})</div>&quot;&quot; gives:<br />
+<div>UNKNOWN SHORTCODE: colour ({&quot;c&quot;=&gt;&quot;blue&quot;, &quot;text&quot;=&gt;&quot;this is a test.&quot;})</div><br />
+If you want to use hex values:<br />
+&quot;&quot;<div>UNKNOWN SHORTCODE: colour ({&quot;hex&quot;=&gt;&quot;#dd0000&quot;, &quot;text&quot;=&gt;&quot;this is another test.&quot;})</div>&quot;&quot; to give:<br />
+<div>UNKNOWN SHORTCODE: colour ({&quot;hex&quot;=&gt;&quot;#dd0000&quot;, &quot;text&quot;=&gt;&quot;this is another test.&quot;})</div><br />
+	<hr /> <strong>Left floated box - use two &lt; signs before and after the block</strong><br />
+	&lt;&lt;Some text in a floated box hanging around&lt;&lt;Some more text as a filler. Some more text as a filler. Some more text as a filler. Some more text as a filler. Some more text as a filler. Some more text as a filler. Some more text as a filler. Some more text as a filler.<br />
+	<strong>Right floated box, use two &gt; characters before and after the block</strong><br />
+	&gt;&gt;Some text in a floated box hanging around&gt;&gt;Some more text as a filler. Some more text as a filler. Some more text as a filler. Some more text as a filler. Some more text as a filler. Some more text as a filler. Some more text as a filler. Some more text as a filler.<br />
+	&quot;&quot;Use ::c::  to clear floated blocks...&quot;&quot;<hr /><h4>Code Formatters:</h4>&quot;&quot;<pre>code</pre>:&quot;&quot;<br />
+%%<br />
+int main(int arc,char **argv)<br />
+{<br />
+	printf(&quot;Hello, %s!<br />
+&quot;, (argc&gt;1) ? argv[1] : &quot;World&quot;);<br />
+	return 0;<br />
+}<br />
+%%<br />
+	&quot;&quot;<pre>(ini) INI file contents</pre>:&quot;&quot;<br />
+%%(ini)<br />
+; Menu specification file for Opera 7.0<br />
+[Version]<br />
+File Version=2<br />
+[Info]  #background info<br />
+Name=Munin++ Menu<br />
+Description=Munin++ Menu<br />
+Author=<a href="/NonTroppo" class="broken internal">NonTroppo</a> (originally by Rijk van Geijtenbeek)<br />
+Version=1.9<br />
+%%<br />
+	&quot;&quot;<pre>(php) PHP code</pre>:&quot;&quot;<br />
+%%(php) <br />
+&lt;?php<br />
+phpinfo();<br />
+ = &quot;Hello, World!<br />
+&quot;;<br />
+print &quot;&quot;;?&gt;<br />
+%%<br />
+	&quot;&quot;<pre>(email) Email message</pre>:&quot;&quot; <br />
+%%(email) <br />
+Hi!<br />
+&gt;&gt;&gt;&gt; My Llama loves foot massage.<br />
+&gt;&gt;&gt; You really think so?<br />
+&gt;&gt; Yes, I know he does.<br />
+&gt;Are you sure?<br />
+Of course, yes!<br />
+Mr. Scruff<br />
+%%<hr /><h4>Forced links:</h4>	&quot;&quot;<a href="http://wikka.jsnx.com" class="broken external">http://wikka.jsnx.com</a>&quot;&quot;<br />
+	<a href="http://wikka.jsnx.com" class="broken external">http://wikka.jsnx.com</a><br />
+	&quot;&quot;<a href="http://wikka.jsnx.com" class="broken external">My Wiki Site</a>&quot;&quot;<br />
+	<a href="http://wikka.jsnx.com" class="broken external">My Wiki Site</a><hr /><h4>Inter Wiki Links:</h4>	See the <a href="/InterWiki" class="internal">InterWiki</a> page for a full list of available engines. Here are some examples:<br />
+	<a href="/Wikipedia" class="auto-fixed internal">WikiPedia</a>:Perception<br />
+	<a href="/CssRef" class="broken internal">CssRef</a>:overflow<br />
+	Google:CSS<br />
+	Thesaurus:Dilate<br />
+	Dictionary:Dream<hr /><h4>FAQ:</h4><em>Question: How do you un-<a href="/WikiName" class="internal">WikiName</a> a word ?</em><br />
+Answer: Add two pair of double-quotes around the word: &quot;&quot;<a href="/WikiName" class="internal">WikiName</a>&quot;&quot;<br />
+<em>Question: How do you get a pair of double-quotes (without any text between them) to display properly ?</em><br />
+Answer: Use the entity literal <pre>&amp;amp;quot;</pre> - <pre>&amp;amp;quot&amp;amp;quot;</pre><br />
+<em>Question: How does Wakka Wiki know to what URL to send a visitor to if it wasn&#39;t specified ?</em><br />
+Answer: The link is to a forced <a href="/WikiPage" class="internal">WikiPage</a>. That means a link to a page in this wiki is generated.<br />
+<em>Question: So why does &quot;&quot;<a href="/LALA_LELE" class="broken internal">LALA_LELE</a>&quot;&quot; send me to http:</em>LALA_LELE ?//<br />
+Answer: The underscore breaks things. &quot;&quot;<a href="/LALALELE" class="broken internal">LALALELE</a>&quot;&quot; doesn&#39;t have this problem.<br />
+<h5>Back Links</h5><div>UNKNOWN SHORTCODE: backlinks ({})</div><hr /><a href="/CategoryWiki" class="internal">CategoryWiki</a>
+  </section>
+  <footer>
+      Created by <a href="/AndyKeohane">AndyKeohane</a> |
+    Updated
+    2004-10-27 14:16:10.000000
+      by <a href="/WikkaInstaller">WikkaInstaller</a>
+  </footer>
+</article>
 
     </main>
     <footer>

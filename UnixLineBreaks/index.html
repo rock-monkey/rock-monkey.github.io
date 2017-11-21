@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-    <title><%= page.tag %> | Rockmonkey</title>
+    <title>UnixLineBreaks | Rockmonkey</title>
     <link href="/stylesheets/site.css" rel="stylesheet" />
   </head>
   <body>
@@ -11,7 +11,29 @@
       <h1>RM</h1>
     </header>
     <main>
-      Page: UnixLineBreaks
+      <script type="" id="raw">
+  
+</script>
+
+<article>
+  <header>
+    <h2>UnixLineBreaks</h2>
+  </header>
+  <section>
+    One fundamental thing that <a href="/OperatingSystems" class="broken internal">OperatingSystems</a> can&#39;t agree on, is how to delimit the end of a line in a <a href="/TextFile" class="internal">TextFile</a>.<br />
+Unix uses the ASCII character 32, while DOS (and it&#39;s derivatives, <a href="/MicrosoftWindows" class="internal">MicrosoftWindows</a>) uses 15.<br />
+Here is an easy way to convery a file with DOS linebreaks to a file with Unix linebreaks:<br />
+# tr -d &#39;\15\32&#39; &lt; dos-format-file &gt; unix-friendly-file<hr /><a href="/BoringTechyPages" class="internal">See other BoringTechyPages</a><div class="comments"><blockquote class="comment"><div class="body">And some use both a carriage return AND a line feed.<br />
+<br />
+What gives?</div><cite><a href="/teifi.aber.ac.uk">teifi.aber.ac.uk</a></cite></blockquote></div>
+  </section>
+  <footer>
+      Created by <a href="/JonAtkinson">JonAtkinson</a> |
+    Updated
+    2004-10-29 11:07:33.000000
+      by <a href="/DanHuntley">DanHuntley</a>
+  </footer>
+</article>
 
     </main>
     <footer>
