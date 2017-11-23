@@ -18,9 +18,13 @@
       <h1><a href="/">RockMonkey</a></h1>
     </header>
     <main>
-      <script type="" id="raw">
-  
-</script>
+      <script type="text/plain" id="raw">==== TromaNightAdventure ====
+=== Police Station ===
+----
+You&#x27;re outside Aberystwyth Police Station. There&#x27;s a truckload of RealAle in the yard{{Test if=&quot;getToken(policeatshell) = 2 or getToken(policepranked) = 1&quot; then=&quot;, just waiting to be snatched!&quot; else=&quot;, but there are two police officers guarding it. If only you could find some way to make them go elsewhere...&quot;}}
+----
+**What next?** {{Test if=&quot;getToken(policeatshell) = 2 or getToken(policepranked) = 1&quot; then=&quot;\n~- [[TromaNight251 Steal the RealAle]]&quot;}}
+~- [[TromaNight003 Back to Alexandra Terrace]]</script>
 
 <article>
   <header>
@@ -40,6 +44,7 @@
     </main>
     <footer>
       <a href="https://creativecommons.org/publicdomain/zero/1.0/" rel="license"><img src="/images/cc0.png" alt="CC0 - Public Domain" /></a>
+      <a href="#" class="show-raw">Show Raw</a>
     </footer>
 
     <script src="/javascripts/site.js"></script>

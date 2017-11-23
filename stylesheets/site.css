@@ -1,8 +1,21 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700,700i");
 a {
   color: #0992b5; }
   a:focus, a:hover {
     color: #076b84; }
+  a.broken {
+    color: #e41a00; }
+    a.broken::before {
+      content: "💥"; }
+  a.external::before {
+    content: "🔗"; }
+
+body .js {
+  display: none; }
+
+body.js .js {
+  display: inherit; }
 
 aside {
   background: #f4f4f4;
@@ -41,6 +54,16 @@ body {
       body > header a:focus, body > header a:hover, body > footer a:focus, body > footer a:hover {
         color: #ffffff;
         text-decoration: underline; }
+  body > footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
   body > main {
     pading: 15px 0; }
     body > main header {
@@ -53,3 +76,15 @@ body {
       font-size: 80%;
       color: gray;
       padding: 8px 0 15px; }
+
+img.right {
+  float: right;
+  margin: 15px 0 15px 15px; }
+
+img.left {
+  float: left;
+  margin: 15px 15px 15px 0; }
+
+img.centre, img.center {
+  display: block;
+  margin: auto; }

@@ -18,9 +18,220 @@
       <h1><a href="/">RockMonkey</a></h1>
     </header>
     <main>
-      <script type="" id="raw">
-  
-</script>
+      <script type="text/plain" id="raw">=== The Wiki Formatting Guide ===
+
+Anything between 2 sets of double-quotes is ignored and presented exactly as typed (that means the formatting commands below are ignored whenever surrounded by double double-quotes.)
+
+Once you&#x27;ve read through this, test your formatting skills in the SandBox.
+----
+===Basic formatting:===
+
+	&quot;&quot;**I&#x27;m bold text!**&quot;&quot;
+	**I&#x27;m bold text!**
+
+	&quot;&quot;&#x2F;&#x2F;I&#x27;m italic text!&#x2F;&#x2F;&quot;&quot;
+	&#x2F;&#x2F;I&#x27;m italic text!&#x2F;&#x2F;
+
+	&quot;&quot;And I&#x27;m __underlined__!&quot;&quot;
+	And I&#x27;m __underlined__!
+
+	&quot;&quot;##monospace text##&quot;&quot;
+	##monospace text##
+
+	&quot;&quot;&#x27;&#x27;highlight text&#x27;&#x27;&quot;&quot; (using 2 single-quotes)
+	&#x27;&#x27;highlight text&#x27;&#x27;
+
+	&quot;&quot;++Strike through text++&quot;&quot;
+	++Strike through text++
+
+	&quot;&quot;Press #%ANY KEY#%&quot;&quot;
+	Press #%ANY KEY#%
+
+	&quot;&quot;@@Center text@@&quot;&quot;
+	@@Center text@@
+
+ ===Headers:===
+	&quot;&quot;====== Really big header ======&quot;&quot;
+	====== Really big header ======
+	
+	&quot;&quot;===== Rather big header =====&quot;&quot;
+	===== Rather big header =====
+	
+	&quot;&quot;==== Medium header ====&quot;&quot; 
+	==== Medium header ====
+	
+	&quot;&quot;=== Not-so-big header ===&quot;&quot; 
+	=== Not-so-big header ===
+	
+	&quot;&quot;== Smallish header ==&quot;&quot; 
+	== Smallish header ==
+
+===Horizontal separator:===
+	&quot;&quot;----&quot;&quot;
+----
+
+===Forced line break:===
+	&quot;&quot;---&quot;&quot;
+---
+----
+===Lists &#x2F; Indents:===
+Indent text using **4** spaces (which will auto-convert into tabs) or using &quot;~&quot;. To make bulleted &#x2F; ordered lists, use the following codes (you can use 4 spaces instead of &quot;~&quot;):
+
+&quot;&quot;~- bulleted list:&quot;&quot;
+	- bulleted list
+	- Line two
+
+&quot;&quot;~1) numbered list:&quot;&quot;
+	1) numbered list
+	1) Line two
+
+&quot;&quot;~A) Using uppercase characters:&quot;&quot;
+	A) Using uppercase characters
+	A) Line two
+
+&quot;&quot;~a) Using lowercase characters:&quot;&quot;
+	a) Using lowercase characters
+	a) Line two
+
+&quot;&quot;~I) using uppercase roman numerals:&quot;&quot;
+	I) using Latin numbers
+	I) Line two
+
+&quot;&quot;~i) using lowercase roman numerals:&quot;&quot;
+	i) using Latin numbers
+	i) Line two
+
+----
+===Wiki Extensions:===
+
+==Images:==
+
+To place images on a Wiki page, use:
+&quot;&quot;{{image class=&quot;center&quot; alt=&quot;DVD logo&quot; title=&quot;An Image Link&quot; url=&quot;images&#x2F;dvdvideo.gif&quot; link=&quot;RecentChanges&quot;}}&quot;&quot;
+{{image class=&quot;center&quot; alt=&quot;dvd logo&quot; title=&quot;An Image Link&quot; url=&quot;images&#x2F;dvdvideo.gif&quot; link=&quot;RecentChanges&quot;}}
+Links can be external, or internal Wiki links. You don&#x27;t have to enter a link at all, and in that case just an image will be inserted. You can also use the classes &#x27;left&#x27; and &#x27;right&#x27; to float images left and right. You don&#x27;t need to use all those attributes, only url is essential.
+
+==Tables:==
+
+To create a table use this code:
+&quot;&quot;{{table columns=&quot;3&quot; cellpadding=&quot;1&quot; cells=&quot;BIG;GREEN;FROGS;yes;yes;no;no;no;###&quot;}}&quot;&quot; to give:
+
+{{table columns=&quot;3&quot; cellpadding=&quot;1&quot; cells=&quot;BIG;GREEN;FROGS;yes;yes;no;no;no;###&quot;}}
+
+&quot;&quot;###&quot;&quot; means the cell is empty.
+
+==Coloured Text:==
+
+&quot;&quot;{{colour c=&quot;blue&quot; text=&quot;This is a test.&quot;}}&quot;&quot; gives:
+
+{{colour c=&quot;blue&quot; text=&quot;This is a test.&quot;}}
+
+If you want to use hex values:
+
+&quot;&quot;{{colour hex=&quot;#DD0000&quot; text=&quot;This is another test.&quot;}}&quot;&quot; to give:
+
+{{colour hex=&quot;#DD0000&quot; text=&quot;This is another test.&quot;}}
+	
+
+----
+
+ **Left floated box - use two &lt; signs before and after the block**
+	&lt;&lt;Some text in a floated box hanging around&lt;&lt;Some more text as a filler. Some more text as a filler. Some more text as a filler. Some more text as a filler. Some more text as a filler. Some more text as a filler. Some more text as a filler. Some more text as a filler.
+
+	**Right floated box, use two &gt; characters before and after the block**
+	&gt;&gt;Some text in a floated box hanging around&gt;&gt;Some more text as a filler. Some more text as a filler. Some more text as a filler. Some more text as a filler. Some more text as a filler. Some more text as a filler. Some more text as a filler. Some more text as a filler.
+
+	&quot;&quot;Use ::c::  to clear floated blocks...&quot;&quot;
+
+----
+===Code Formatters:===
+
+&quot;&quot;%%code%%:&quot;&quot;
+%%
+int main(int arc,char **argv)
+{
+	printf(&quot;Hello, %s!
+&quot;, (argc&gt;1) ? argv[1] : &quot;World&quot;);
+	return 0;
+}
+%%
+
+	&quot;&quot;%%(ini) INI file contents%%:&quot;&quot;
+%%(ini)
+; Menu specification file for Opera 7.0
+
+[Version]
+File Version=2
+
+[Info]  #background info
+Name=Munin++ Menu
+Description=Munin++ Menu
+Author=NonTroppo (originally by Rijk van Geijtenbeek)
+Version=1.9
+%%
+	&quot;&quot;%%(php) PHP code%%:&quot;&quot;
+%%(php) 
+&lt;?php
+phpinfo();
+ = &quot;Hello, World!
+&quot;;
+print &quot;&quot;;?&gt;
+%%
+
+	&quot;&quot;%%(email) Email message%%:&quot;&quot; 
+%%(email) 
+Hi!
+&gt;&gt;&gt;&gt; My Llama loves foot massage.
+&gt;&gt;&gt; You really think so?
+&gt;&gt; Yes, I know he does.
+&gt;Are you sure?
+
+Of course, yes!
+
+Mr. Scruff
+%%
+
+----
+===Forced links:===
+	&quot;&quot;[[http:&#x2F;&#x2F;wikka.jsnx.com]]&quot;&quot;
+	[[http:&#x2F;&#x2F;wikka.jsnx.com]]
+
+	&quot;&quot;[[http:&#x2F;&#x2F;wikka.jsnx.com My Wiki Site]]&quot;&quot;
+	[[http:&#x2F;&#x2F;wikka.jsnx.com My Wiki Site]]
+
+
+----
+
+===Inter Wiki Links:===
+	See the InterWiki page for a full list of available engines. Here are some examples:
+
+	WikiPedia:Perception
+	CssRef:overflow
+	Google:CSS
+	Thesaurus:Dilate
+	Dictionary:Dream
+
+----
+
+===FAQ:===
+&#x2F;&#x2F;Question: How do you un-WikiName a word ?&#x2F;&#x2F;
+Answer: Add two pair of double-quotes around the word: &quot;&quot;WikiName&quot;&quot;
+
+&#x2F;&#x2F;Question: How do you get a pair of double-quotes (without any text between them) to display properly ?&#x2F;&#x2F;
+Answer: Use the entity literal ##&amp;amp;quot;## - ##&amp;amp;quot&amp;amp;quot;##
+
+&#x2F;&#x2F;Question: How does Wakka Wiki know to what URL to send a visitor to if it wasn&#x27;t specified ?&#x2F;&#x2F;
+Answer: The link is to a forced WikiPage. That means a link to a page in this wiki is generated.
+
+&#x2F;&#x2F;Question: So why does &quot;&quot;[[LALA_LELE]]&quot;&quot; send me to http:&#x2F;&#x2F;LALA_LELE ?&#x2F;&#x2F;
+Answer: The underscore breaks things. &quot;&quot;[[LALALELE]]&quot;&quot; doesn&#x27;t have this problem.
+
+
+==Back Links==
+{{backlinks}}
+
+----
+CategoryWiki</script>
 
 <article>
   <header>
@@ -102,7 +313,7 @@ File Version=2<br />
 [Info]  #background info<br />
 Name=Munin++ Menu<br />
 Description=Munin++ Menu<br />
-Author=<a href="/NonTroppo" class="broken internal">NonTroppo</a> (originally by Rijk van Geijtenbeek)<br />
+Author=<a href="/NonTroppo" class="internal broken">NonTroppo</a> (originally by Rijk van Geijtenbeek)<br />
 Version=1.9<br />
 %%<br />
 	&quot;&quot;<pre>(php) PHP code</pre>:&quot;&quot;<br />
@@ -121,12 +332,12 @@ Hi!<aside>&gt;&gt; My Llama loves foot massage.<br />
 &gt;Are you sure?<br />
 Of course, yes!<br />
 Mr. Scruff<br />
-%%<hr /><h4>Forced links:</h4>	&quot;&quot;<a href="http://wikka.jsnx.com" class="broken external">http://wikka.jsnx.com</a>&quot;&quot;<br />
-	<a href="http://wikka.jsnx.com" class="broken external">http://wikka.jsnx.com</a><br />
-	&quot;&quot;<a href="http://wikka.jsnx.com" class="broken external">My Wiki Site</a>&quot;&quot;<br />
-	<a href="http://wikka.jsnx.com" class="broken external">My Wiki Site</a><hr /><h4>Inter Wiki Links:</h4>	See the <a href="/InterWiki" class="internal">InterWiki</a> page for a full list of available engines. Here are some examples:<br />
-	<a href="/Wikipedia" class="auto-fixed internal">WikiPedia</a>:Perception<br />
-	<a href="/CssRef" class="broken internal">CssRef</a>:overflow<br />
+%%<hr /><h4>Forced links:</h4>	&quot;&quot;<a href="http://wikka.jsnx.com" class="external">http://wikka.jsnx.com</a>&quot;&quot;<br />
+	<a href="http://wikka.jsnx.com" class="external">http://wikka.jsnx.com</a><br />
+	&quot;&quot;<a href="http://wikka.jsnx.com" class="external">My Wiki Site</a>&quot;&quot;<br />
+	<a href="http://wikka.jsnx.com" class="external">My Wiki Site</a><hr /><h4>Inter Wiki Links:</h4>	See the <a href="/InterWiki" class="internal">InterWiki</a> page for a full list of available engines. Here are some examples:<br />
+	<a href="/WikiPedia" class="internal auto-fixed">WikiPedia</a>:Perception<br />
+	<a href="/CssRef" class="internal broken">CssRef</a>:overflow<br />
 	Google:CSS<br />
 	Thesaurus:Dilate<br />
 	Dictionary:Dream<hr /><h4>FAQ:</h4><em>Question: How do you un-<a href="/WikiName" class="internal">WikiName</a> a word ?</em><br />
@@ -135,8 +346,8 @@ Answer: Add two pair of double-quotes around the word: &quot;&quot;<a href="/Wik
 Answer: Use the entity literal <pre>&amp;amp;quot;</pre> - <pre>&amp;amp;quot&amp;amp;quot;</pre><br />
 <em>Question: How does Wakka Wiki know to what URL to send a visitor to if it wasn&#39;t specified ?</em><br />
 Answer: The link is to a forced <a href="/WikiPage" class="internal">WikiPage</a>. That means a link to a page in this wiki is generated.<br />
-<em>Question: So why does &quot;&quot;<a href="/LALA_LELE" class="broken internal">LALA_LELE</a>&quot;&quot; send me to http://LALA_LELE ?</em><br />
-Answer: The underscore breaks things. &quot;&quot;<a href="/LALALELE" class="broken internal">LALALELE</a>&quot;&quot; doesn&#39;t have this problem.<h5>Back Links</h5><div>UNKNOWN SHORTCODE: backlinks ({})</div><hr /><a href="/CategoryWiki" class="internal">CategoryWiki</a>
+<em>Question: So why does &quot;&quot;<a href="/LALA_LELE" class="internal broken">LALA_LELE</a>&quot;&quot; send me to http://LALA_LELE ?</em><br />
+Answer: The underscore breaks things. &quot;&quot;<a href="/LALALELE" class="internal broken">LALALELE</a>&quot;&quot; doesn&#39;t have this problem.<h5>Back Links</h5><div>UNKNOWN SHORTCODE: backlinks ({})</div><hr /><a href="/CategoryWiki" class="internal">CategoryWiki</a>
   </section>
   <footer>
       Created by <a href="/AndyKeohane">AndyKeohane</a> |
@@ -149,6 +360,7 @@ Answer: The underscore breaks things. &quot;&quot;<a href="/LALALELE" class="bro
     </main>
     <footer>
       <a href="https://creativecommons.org/publicdomain/zero/1.0/" rel="license"><img src="/images/cc0.png" alt="CC0 - Public Domain" /></a>
+      <a href="#" class="show-raw">Show Raw</a>
     </footer>
 
     <script src="/javascripts/site.js"></script>

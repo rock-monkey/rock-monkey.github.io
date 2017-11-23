@@ -18,9 +18,15 @@
       <h1><a href="/">RockMonkey</a></h1>
     </header>
     <main>
-      <script type="" id="raw">
-  
-</script>
+      <script type="text/plain" id="raw">==== TromaNightAdventure ====
+=== Railway Station ===
+----
+{{image class=&quot;center&quot; alt=&quot;Aberystwyth Pier&quot; url=&quot;&#x2F;TromaNightAdventure&#x2F;abersign01.jpg&quot;}}
+
+You are at [[AberystwythTown Aberystwyth]] railway station. {{InvHasNone item=&quot;MisterJTA&quot; text=&quot;A train has just pulled in, and people are milling about, trying to find one another and gather their bags, children, and other inconveniences. Amongst the throng, you think you make out a familiar face - could it be MisterJTA?&quot;}} {{InvHasOne item=&quot;MisterJTA&quot; text=&quot;The hubbub has cleared and the platform is clear. JTA seems relieved that he doesn&#x27;t have to fight his way through the crowd any more.&quot;}}
+----
+**What next?** {{Test if=&quot;!hasItem(MisterJTA)&quot; then=&quot;\n~- [[TromaNight007a Try to find MisterJTA]]&quot;}}
+~- [[TromaNight003 Leave the station]]</script>
 
 <article>
   <header>
@@ -41,6 +47,7 @@ You are at <a href="/AberystwythTown" class="internal">Aberystwyth</a> railway s
     </main>
     <footer>
       <a href="https://creativecommons.org/publicdomain/zero/1.0/" rel="license"><img src="/images/cc0.png" alt="CC0 - Public Domain" /></a>
+      <a href="#" class="show-raw">Show Raw</a>
     </footer>
 
     <script src="/javascripts/site.js"></script>

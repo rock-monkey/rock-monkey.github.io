@@ -18,18 +18,43 @@
       <h1><a href="/">RockMonkey</a></h1>
     </header>
     <main>
-      <script type="" id="raw">
-  
-</script>
+      <script type="text/plain" id="raw">==== [[HTTPProtocol HTTP]] ====
+
+The [[HTTPProtocol]] is best known for it&#x27;s [[404]] (Resource Not Found) errors. Almost nobody knows anything else about it, except for [[DanHuntley Dan]], who reads [[RequestForComments RFC]]s for fun.
+
+PaulMann adds that the best thing about the protocol is it&#x27;s incredible simplicity...
+
+GarethBowker adds that [[DanHuntley Dan]] can&#x27;t have read it that closely, else he&#x27;d know it stands for &quot;&quot;HyperTextTransferProtocol&quot;&quot;, so talking about  the &quot;&quot;HyperTextTransferProtocolProtocol&quot;&quot; seems a little daft, if you ask him. Which you didn&#x27;t. It&#x27;s like talking about PIN numbers, where the N stands for number. Muppets.
+
+GarethBowker also adds: or Windows 2000, built on NT Technology, where NT stood for New Technology. Fucking idiots.
+
+DanHuntley adds that he knows it pretty much by heart, and that HTTPProtocol was chosen as the WikiWord very deliberately and with forethought, because HTTProtocol (a) looks shit and (b) confuses people and HTTP wasn&#x27;t suitable for use as a WikiWord when the link was made.
+----
+=== Simplicity ===
+
+Client: Hey there, server. I&#x27;d like a particular page.
+Client: I&#x27;m a copy of MozillaFirefox, by the way, and I found you from a link from [[Google]].
+Client: I might want something else in a moment, so hang on.
+Server: Okay then, here&#x27;s the page you wanted &#x2F;&#x2F;&lt;hands&gt;&#x2F;&#x2F;.
+Client: The page has an image on it, has the image changed since I saw it last week?
+Server: Nope, same one since last year, you don&#x27;t need a new copy.
+Client: How about this Java Applet; that&#x27;s new, right?
+Server: Yup, here it is. &#x2F;&#x2F;&lt;hands&gt;&#x2F;&#x2F;
+...
+Server: Hmm... guess that client has gone away elsewhere, now. Who&#x27;s next?
+----
+=== Denial of Service ===
+
+Everyone&#x27;s heard of Denial of Service attacks. And the &quot;Simplicity&quot; example shows how a basic one can be achieved. See the &quot;...&quot;, while the server waits? Yes. You don&#x27;t tell it you&#x27;re done, it waits for a defined length of time. The problem is the server can only deal with so many requests at once, so if you keep it waiting by making zillions of requests at once, genuine ones can&#x27;t get through. Of course, if it was made so the server drops the connection ASAP that would go some way towards fixing it, but then it becomes really inefficient because you have to go through the first 3 lines every single time you do anything...</script>
 
 <article>
   <header>
     <h2>HTTPProtocol</h2>
   </header>
   <section>
-    <h3><a href="/HTTPProtocol" class="internal">HTTP</a></h3>The <a href="/HTTPProtocol" class="internal">HTTPProtocol</a> is best known for it&#39;s <a href="/404" class="internal">404</a> (Resource Not Found) errors. Almost nobody knows anything else about it, except for <a href="/DanHuntley" class="internal">Dan</a>, who reads <a href="/RequestForComments" class="broken internal">RFC</a>s for fun.<br />
+    <h3><a href="/HTTPProtocol" class="internal">HTTP</a></h3>The <a href="/HTTPProtocol" class="internal">HTTPProtocol</a> is best known for it&#39;s <a href="/404" class="internal">404</a> (Resource Not Found) errors. Almost nobody knows anything else about it, except for <a href="/DanHuntley" class="internal">Dan</a>, who reads <a href="/RequestForComments" class="internal broken">RFC</a>s for fun.<br />
 <a href="/PaulMann" class="internal">PaulMann</a> adds that the best thing about the protocol is it&#39;s incredible simplicity...<br />
-<a href="/GarethBowker" class="internal">GarethBowker</a> adds that <a href="/DanHuntley" class="internal">Dan</a> can&#39;t have read it that closely, else he&#39;d know it stands for &quot;&quot;<a href="/HyperTextTransferProtocol" class="broken internal">HyperTextTransferProtocol</a>&quot;&quot;, so talking about  the &quot;&quot;<a href="/HyperTextTransferProtocolProtocol" class="broken internal">HyperTextTransferProtocolProtocol</a>&quot;&quot; seems a little daft, if you ask him. Which you didn&#39;t. It&#39;s like talking about PIN numbers, where the N stands for number. Muppets.<br />
+<a href="/GarethBowker" class="internal">GarethBowker</a> adds that <a href="/DanHuntley" class="internal">Dan</a> can&#39;t have read it that closely, else he&#39;d know it stands for &quot;&quot;<a href="/HyperTextTransferProtocol" class="internal broken">HyperTextTransferProtocol</a>&quot;&quot;, so talking about  the &quot;&quot;<a href="/HyperTextTransferProtocolProtocol" class="internal broken">HyperTextTransferProtocolProtocol</a>&quot;&quot; seems a little daft, if you ask him. Which you didn&#39;t. It&#39;s like talking about PIN numbers, where the N stands for number. Muppets.<br />
 <a href="/GarethBowker" class="internal">GarethBowker</a> also adds: or Windows 2000, built on NT Technology, where NT stood for New Technology. Fucking idiots.<br />
 <a href="/DanHuntley" class="internal">DanHuntley</a> adds that he knows it pretty much by heart, and that HTTPProtocol was chosen as the <a href="/WikiWord" class="internal">WikiWord</a> very deliberately and with forethought, because HTTProtocol (a) looks shit and (b) confuses people and HTTP wasn&#39;t suitable for use as a <a href="/WikiWord" class="internal">WikiWord</a> when the link was made.<hr /><h4>Simplicity</h4>Client: Hey there, server. I&#39;d like a particular page.<br />
 Client: I&#39;m a copy of <a href="/MozillaFirefox" class="internal">MozillaFirefox</a>, by the way, and I found you from a link from <a href="/Google" class="internal">Google</a>.<br />
@@ -53,6 +78,7 @@ Server: Hmm... guess that client has gone away elsewhere, now. Who&#39;s next?<h
     </main>
     <footer>
       <a href="https://creativecommons.org/publicdomain/zero/1.0/" rel="license"><img src="/images/cc0.png" alt="CC0 - Public Domain" /></a>
+      <a href="#" class="show-raw">Show Raw</a>
     </footer>
 
     <script src="/javascripts/site.js"></script>

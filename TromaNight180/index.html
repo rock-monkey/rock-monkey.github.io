@@ -18,9 +18,20 @@
       <h1><a href="/">RockMonkey</a></h1>
     </header>
     <main>
-      <script type="" id="raw">
-  
-</script>
+      <script type="text/plain" id="raw">==== TromaNightAdventure ====
+=== PaulMann ===
+----
+You give Paul your Bar Of Soap.
+
+{{InvDrop item=&quot;Bar Of Soap&quot;}}
+
+{{Test if=&quot;!hasItem(Ginger Wig)&quot; then=&quot;Paul gives you a Ginger Wig\n\n~{InvPickup item=~Ginger Wig~}~&quot; else=&quot;Paul re-arranges his hair.&quot;}}
+
+Paul gestures that you should wear the Ginger Wig.
+----
+**What next?**
+~- [[TromaNight194 Wear the Ginger Wig]]
+~- [[TromaNight165 &quot;Okaay...?&quot;]]</script>
 
 <article>
   <header>
@@ -43,6 +54,7 @@ Paul gestures that you should wear the Ginger Wig.<hr /><strong>What next?</stro
     </main>
     <footer>
       <a href="https://creativecommons.org/publicdomain/zero/1.0/" rel="license"><img src="/images/cc0.png" alt="CC0 - Public Domain" /></a>
+      <a href="#" class="show-raw">Show Raw</a>
     </footer>
 
     <script src="/javascripts/site.js"></script>

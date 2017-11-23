@@ -18,9 +18,22 @@
       <h1><a href="/">RockMonkey</a></h1>
     </header>
     <main>
-      <script type="" id="raw">
-  
-</script>
+      <script type="text/plain" id="raw">======Marketplace======
+
+{{Test if=&quot;getToken(visMar) = 0&quot; then=&quot;You land in the marketplace, and hide the Squirrel-mobile under an abandoned stall. You agree to split up and search for the source of the distress signal, and your partner soon wanders off, leaving you alone.&quot; else=&quot;You are back in the marketplace where you originally landed.&quot;}}
+
+The marketplace is a large, cobbled square with a stone fountain in the centre. Roads lead off from each corner, to the south towards a hill with an imposing palace on it, to the north towards some woodland, to the east, further into the town and to the west, into what looks like a swamp.
+
+The square itself is lined with sagging wooden stalls, each one draped with brightly coloured cloth. They have slogans painted on them in glittering paint, you can see that the nearest one reads: &quot;Feeling Low? Remember Rainbows!!&quot;.
+
+{{Test if=&quot;getToken(ptf) = 1&quot; then=&quot;To your surprise, the stick the old man gave you starts to vibrate. You pull it out, and it twists to point at the fountain.&quot;}}{{SetToken token=&quot;visMar&quot; value=&quot;+1&quot;}}{{Test if=&quot;getToken(visMar) &gt; 5&quot; then=&quot;A short elf leaning heavily on a stick cackles at you from behind one of the deserted stalls.&quot;}}
+----
+What now?
+[[TnS003 Go North]]
+[[TnS004 Go South]]
+[[TnS005 Go East]]
+[[TnS006 Go West]]
+{{InvHasOne item=&quot;PathFinder Stick&quot; link=&quot;TnS007&quot; text=&quot;Examine Fountain&quot;}}{{Test if=&quot;(getToken(visMar) &gt; 5) and (getToken(stolenCorkscrew) = 0)&quot; then=&quot;\n[[TnS045 Talk To Shop-Elf]]&quot;}}{{Test if=&quot;(getToken(visMar) &gt; 5) and (getToken(stolenCorkscrew) = 1)&quot; then=&quot;\n[[TnS063 Talk To Shop-Elf]]&quot;}}</script>
 
 <article>
   <header>
@@ -31,9 +44,9 @@
 The marketplace is a large, cobbled square with a stone fountain in the centre. Roads lead off from each corner, to the south towards a hill with an imposing palace on it, to the north towards some woodland, to the east, further into the town and to the west, into what looks like a swamp.<br />
 The square itself is lined with sagging wooden stalls, each one draped with brightly coloured cloth. They have slogans painted on them in glittering paint, you can see that the nearest one reads: &quot;Feeling Low? Remember Rainbows!!&quot;.<br />
 <hr />What now?<br />
-<a href="/TnS003" class="broken internal">Go North</a><br />
-<a href="/TnS004" class="broken internal">Go South</a><br />
-<a href="/TnS005" class="broken internal">Go East</a><br />
+<a href="/TnS003" class="internal broken">Go North</a><br />
+<a href="/TnS004" class="internal broken">Go South</a><br />
+<a href="/TnS005" class="internal broken">Go East</a><br />
 <a href="/TnS006" class="internal">Go West</a><br />
 
   </section>
@@ -48,6 +61,7 @@ The square itself is lined with sagging wooden stalls, each one draped with brig
     </main>
     <footer>
       <a href="https://creativecommons.org/publicdomain/zero/1.0/" rel="license"><img src="/images/cc0.png" alt="CC0 - Public Domain" /></a>
+      <a href="#" class="show-raw">Show Raw</a>
     </footer>
 
     <script src="/javascripts/site.js"></script>

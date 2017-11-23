@@ -18,45 +18,62 @@
       <h1><a href="/">RockMonkey</a></h1>
     </header>
     <main>
-      <script type="" id="raw">
-  
-</script>
+      <script type="text/plain" id="raw">==== TromaNightAdventure ====
+=== You Have Won! ===
+----
+**CONGRATULATIONS!** You have won TromaNightAdventure! {{SetToken token=&quot;finalscore&quot; value=&quot;0&quot;}} {{SetToken token=&quot;pantycelyn&quot; value=&quot;0&quot;}}
+----
+=== Score Breakdown ===
+== People At TromaNight ==
+~- {{Test if=&quot;hasItem(BrynSalisbury)&quot; then=&quot;You rescued **BrynSalisbury** from a bucket! **(10pts)** ~{SetToken token=~finalscore~ value=~+10~}~&quot; else=&quot;You didn&#x27;t get **BrynSalisbury** to TromaNight. **(0pts)**&quot;}}
+~- {{Test if=&quot;hasItem(PaulMann)&quot; then=&quot;You negotiated **PaulMann**&#x27;s appearance at TromaNight! **(10pts)** ~{SetToken token=~finalscore~ value=~+10~}~&quot; else=&quot;You couldn&#x27;t persuade **PaulMann** to come. **(0pts)**&quot;}}
+~- {{Test if=&quot;hasItem(RuthVarley)&quot; then=&quot;You rescued **RuthVarley** from [[Pantycelyn]]! **(10pts)** ~{SetToken token=~finalscore~ value=~+10~}~&quot; else=&quot;You didn&#x27;t manage to rescue **RuthVarley**. **(0pts)**&quot;}}
+~- {{Test if=&quot;hasItem(MisterJTA)&quot; then=&quot;You brought **MisterJTA** along! **(10pts)** ~{SetToken token=~finalscore~ value=~+10~}~&quot; else=&quot;You didn&#x27;t manage to get to **MisterJTA**. **(0pts)**&quot;}}
+~- {{Test if=&quot;hasItem(JonAtkinson)&quot; then=&quot;With the promise of TastyLager, **JonAtkinson** came over! **(10pts)** ~{SetToken token=~finalscore~ value=~+10~}~&quot; else=&quot;**JonAtkinson** decided he had better things to do. **(0pts)**&quot;}}
+~- {{Test if=&quot;hasItem(AndyKeohane)&quot; then=&quot;He should be doing his coursework, but you got **AndyKeohane** to come to TromaNight anyway! **(10pts)** ~{SetToken token=~finalscore~ value=~+10~}~&quot; else=&quot;**AndyKeohane** wouldn&#x27;t come to TromaNight. **(0pts)**&quot;}}
+
+== TromaNight Films ==
+~- {{Test if=&quot;hasItem(Really Bad Film)&quot; then=&quot;[[PaulMann Paul]] provided the **Really Bad Film**! **(5pts)** ~{SetToken token=~finalscore~ value=~+5~}~&quot; else=&quot;You didn&#x27;t get the **Really Bad Film**. **(0pts)**&quot;}}
+~- {{Test if=&quot;hasItem(Really Good Film)&quot; then=&quot;NotGayGareth lent you the **Really Good Film**! **(5pts)** ~{SetToken token=~finalscore~ value=~+5~}~&quot; else=&quot;You failed to get the **Really Good Film**. **(0pts)**&quot;}}
+~- {{Test if=&quot;hasItem(Moderately Good Film)&quot; then=&quot;You got the **Moderately Good Film** from PierVideo! **(5pts)** ~{SetToken token=~finalscore~ value=~+5~}~&quot; else=&quot;There&#x27;s no **Moderately Good Film** to watch, though. **(0pts)**&quot;}}
+~- {{Test if=&quot;hasItem(Arty Film)&quot; then=&quot;You found the **Arty Film**! **(10pts)** ~{SetToken token=~finalscore~ value=~+10~}~&quot; else=&quot;You didn&#x27;t find the **Arty Film**. **(0pts)**&quot;}}
+~- {{Test if=&quot;hasItem(Pornographic Film)&quot; then=&quot;And you also grabbed the **Pornographic Film**! **(10pts)** ~{SetToken token=~finalscore~ value=~+10~}~&quot; else=&quot;You couldn&#x27;t get the **Pornographic Film**. **(0pts)**&quot;}}
+
+== TromaNight Refreshments ==
+~- {{Test if=&quot;hasItem(RealAle)&quot; then=&quot;You acquired **RealAle**! **(10pts)** ~{SetToken token=~finalscore~ value=~+10~}~&quot; else=&quot;You didn&#x27;t get **RealAle**!!! **(-100pts)** ~{SetToken token=~finalscore~ value=~-100~}~&quot;}}
+~- {{Test if=&quot;hasItem(Pizza With Meat)&quot; then=&quot;DanHuntley munches down on the **Pizza With Meat**! **(5pts)** ~{SetToken token=~finalscore~ value=~+5~}~&quot; else=&quot;You didn&#x27;t get any **Pizza With Meat**. **(0pts)**&quot;}}
+~- {{Test if=&quot;hasItem(Pizza With Vegetables)&quot; then=&quot;You bought **Pizza With Vegetables** for the [[Vegetarian vegetarians]]. **(10pts)** ~{SetToken token=~finalscore~ value=~+5~}~&quot; else=&quot;You didn&#x27;t get any **Pizza With Vegetables**. **(0pts)**&quot;}}
+~- {{Test if=&quot;hasItem(Pizza With Everything)&quot; then=&quot;The **Pizza With Everything** goes down a storm! **(10pts)** ~{SetToken token=~finalscore~ value=~+10~}~&quot; else=&quot;But there&#x27;s no **Pizza With Everything** for anybody. **(0pts)**&quot;}}
+
+== Pantycelyn Rescue == {{Test if=&quot;hasItem(Welsh Flag Towel)&quot; then=&quot;\n~- You stole the **Welsh Flag Towel** from [[Pantycelyn]]! **(10pts)** ~{SetToken token=~finalscore~ value=~+10~}~ ~{SetToken token=~pantycelyn~ value=~1~}~&quot;}} {{Test if=&quot;hasItem(A Sore Head)&quot; then=&quot;\n~- You injured your head while escaping from [[Pantycelyn]]! **(-5pts)** ~{SetToken token=~finalscore~ value=~-5~}~ ~{SetToken token=~pantycelyn~ value=~1~}~&quot;}} {{Test if=&quot;hasItem(Sore Hands)&quot; then=&quot;\n~- You injured your hands while escaping from [[Pantycelyn]]! **(-5pts)** ~{SetToken token=~finalscore~ value=~-5~}~ ~{SetToken token=~pantycelyn~ value=~1~}~&quot;}} {{Test if=&quot;getToken(pantycelyn) = 0 and hasItem(RuthVarley)&quot; then=&quot;\n~- You weren&#x27;t involved in the [[Pantycelyn]] escape! **(0pts)**&quot;}} {{Test if=&quot;getToken(pantycelyn) = 1 and hasItem(RuthVarley)&quot; then=&quot;\n~- You single-handedly led the [[Pantycelyn]] escape! **(10pts)** ~{SetToken token=~finalscore~ value=~+10~}~&quot;}} {{Test if=&quot;!hasItem(RuthVarley)&quot; then=&quot;\n~- You didn&#x27;t manage to rescue [[RuthVarley Ruth]] from [[Pantycelyn]].&quot;}}
+
+== [[Rocks]] And The RockMonkey == {{Test if=&quot;!hasItem(AndyKeohane) and !hasItem(Real Blue Rock) and !hasItem(Fake Blue Rock)&quot; then=&quot;\n~- You didn&#x27;t get a rock to satisfy AndyKeohane.&quot;}} {{Test if=&quot;hasItem(AndyKeohane) and hasItem(Real Blue Rock)&quot; then=&quot;\n~- You got the **Real Blue Rock** from the GeographyTower. **(10pts) ~{SetToken token=~finalscore~ value=~+10~}~**&quot;}} {{Test if=&quot;hasItem(AndyKeohane) and hasItem(Fake Blue Rock)&quot; then=&quot;\n~- You made a convincing **Fake Blue Rock** by painting a normal rock. **(10pts) ~{SetToken token=~finalscore~ value=~+10~}~**&quot;}}
+
+== Cool Extras ==
+~- {{Test if=&quot;hasItem(A Terrible Thing To Waste)&quot; then=&quot;You finished with **A Terrible Thing To Waste** still in your possession. **(3pts)** ~{SetToken token=~finalscore~ value=~+3~}~&quot; else=&quot;You never had (or managed to lose) **A Terrible Thing To Waste**. **(0pts)**&quot;}}
+~- {{Test if=&quot;hasItem(Welsh Recording)&quot; then=&quot;You managed to make a **Welsh Recording**. **(2pts)** ~{SetToken token=~finalscore~ value=~+2~}~&quot; else=&quot;You didn&#x27;t manage to make a **Welsh Recording**. **(0pts)**&quot;}} {{Test if=&quot;hasItem(PaulMann) and hasItem(JonAtkinson)&quot; then=&quot;\n~- Getting PaulMann and JonAtkinson in the same room together without coming to blows. **(5pts)** ~{SetToken token=~finalscore~ value=~+5~}~&quot;}}
+
+== Death And Dying ==
+~- {{Test if=&quot;getToken(tromanightdeath) = 0&quot; then=&quot;You did not cheat by pressing the &#x27;back&#x27; button after dying.&quot; else=&quot;You died, and pressed &#x27;back&#x27; rather than starting over - cheater! **(-50pts)** ~{SetToken token=~finalscore~ value=~-50~}~&quot;}}
+
+----
+==== Final Score: **{{GetToken token=&quot;finalscore&quot;}} points**! ====
+=== Max. Score: **175 points**! ===
+
+Don&#x27;t forget to leave a comment to tell the world how you did!
+----
+**What next?**
+~- [[TromaNightAdventure Play again]]
+~- [[WikiGames Play other WikiGames]]
+~- [[WikiGameToolkit Learn about the WikiGameToolkit]]
+~- [[DanHuntley See the page of TromaNightAdventure&#x27;s author, DanHuntley]]</script>
 
 <article>
   <header>
     <h2>TromaNight230</h2>
   </header>
   <section>
-    <div class="wikigame-shortcodes">This page used <a href="/WikiGameToolkit" class="internal">WikiGameToolkit</a> shortcodes, which are not supported in this version of the site.</div><h3><a href="/TromaNightAdventure" class="internal">TromaNightAdventure</a></h3><h4>You Have Won!</h4><hr /><strong>CONGRATULATIONS!</strong> You have won <a href="/TromaNightAdventure" class="internal">TromaNightAdventure</a>!  <hr /><h4>Score Breakdown</h4><h5>People At <a href="/TromaNight" class="internal">TromaNight</a></h5><ul><li> </li><li> </li><li> </li><li> </li><li> </li><li> <h5><a href="/TromaNight" class="internal">TromaNight</a> Films</h5><li> </li><li> </li><li> </li><li> </li><li> <h5><a href="/TromaNight" class="internal">TromaNight</a> Refreshments</h5><li> </li><li> </li><li> </li><li> <h5>Pantycelyn Rescue</h5>      <h5><a href="/Rocks" class="broken internal">Rocks</a> And The <a href="/RockMonkey" class="internal">RockMonkey</a></h5>   <h5>Cool Extras</h5><li> </li><li>  <h5>Death And Dying</h5><li> <hr /><h3>Final Score: <strong> points</strong>!</h3><h4>Max. Score: <strong>175 points</strong>!</h4>Don&#39;t forget to leave a comment to tell the world how you did!<hr /><strong>What next?</strong></li><li> <a href="/TromaNightAdventure" class="internal">Play again</a></li><li> <a href="/WikiGames" class="internal">Play other WikiGames</a></li><li> <a href="/WikiGameToolkit" class="internal">Learn about the WikiGameToolkit</a></li><li> <a href="/DanHuntley" class="internal">See the page of TromaNightAdventure&#39;s author, DanHuntley</a></ul><div class="comments"><blockquote class="comment"><div class="body">137 points. Hmm need a better way to get the rock and a way to escape without getting sore hands. Yay for DanHuntley</div><cite><a href="/AndyKeohane">AndyKeohane</a></cite></blockquote>
-<blockquote class="comment"><div class="body">133 Points for me... I sent me into Pantycelyn to rescue RuthVarley -- I did manage to get all the stars... I have no idea however why I'm featured with a bucket on my head. Good job Dan :)<br />
-<br />
-B</div><cite><a href="/BrynSalisbury">BrynSalisbury</a></cite></blockquote>
-<blockquote class="comment"><div class="body">165!!! Who's your daddy? Yeah I am!!! I did cheat a teentsy bit by seeing the second half of Bryn's game but I still kicked all your arses!!! Hell yeah!!!</div><cite><a href="/MattInTheHat">MattInTheHat</a></cite></blockquote>
-<blockquote class="comment"><div class="body">145... The conversation with Paul was really wierd, &amp; I didn't get him to come, but No Worries... I especially liked the Monkey Island refs, of which I found, er... Two. <br />
-<br />
-Didn't explore all four manholes, though.</div><cite><a href="/MisterJTA">MisterJTA</a></cite></blockquote>
-<blockquote class="comment"><div class="body">wow, i suck. i only got 113 points.</div><cite><a href="/RestlessBoy">RestlessBoy</a></cite></blockquote>
-<blockquote class="comment"><div class="body">went back and got 140 points second time around.</div><cite><a href="/RestlessBoy">RestlessBoy</a></cite></blockquote>
-<blockquote class="comment"><div class="body">157... where's the damn arty film?</div><cite><a href="/RestlessBoy">RestlessBoy</a></cite></blockquote>
-<blockquote class="comment"><div class="body">130 points.</div><cite><a href="/ClaireMelton">ClaireMelton</a></cite></blockquote>
-<blockquote class="comment"><div class="body">162 second time around, and now thanks to Dan if anyone ever says Andy Andy What kinda rock is this? I can say go play TromaNightAdventure to find out.</div><cite><a href="/AndyKeohane">AndyKeohane</a></cite></blockquote>
-<blockquote class="comment"><div class="body">Huzzah! 165! Where the Hell is the Artsy film, though?!</div><cite><a href="/MisterJTA">MisterJTA</a></cite></blockquote>
-<blockquote class="comment"><div class="body">172 AndyKeohane - no idea where the extra 3 points are though.</div><cite><a href="/AndyKeohane">AndyKeohane</a></cite></blockquote>
-<blockquote class="comment"><div class="body">Andy - you probably need to finish with A Terrible Thing To Waste in your possession. Try.</div><cite><a href="/DanHuntley">DanHuntley</a></cite></blockquote>
-<blockquote class="comment"><div class="body">Winnage! 175 AndyKeohane</div><cite><a href="/AndyKeohane">AndyKeohane</a></cite></blockquote>
-<blockquote class="comment"><div class="body">105 points. <br />
-I died the first time and had to quit before finding the ale second time. <br />
-I have worked out how to get more points next time though</div><cite><a href="/StrokeyAdam">StrokeyAdam</a></cite></blockquote>
-<blockquote class="comment"><div class="body">152 points.<br />
-<br />
-But then...  &quot;You died, and pressed 'back' rather than starting over - cheater!&quot; and now I have one single point.<br />
-<br />
-Damn you all!</div><cite><a href="/JimmyCarter">JimmyCarter</a></cite></blockquote>
-<blockquote class="comment"><div class="body">Mwhahahaha!<br />
-How did you die?</div><cite><a href="/DanHuntley">DanHuntley</a></cite></blockquote>
-<blockquote class="comment"><div class="body">115 points.<br />
-<br />
-I'm going to try and rescue Ruth myself, feel cheated not having done it. Onward!</div><cite><a href="/MattPayne">MattPayne</a></cite></blockquote></div>
+    <div class="wikigame-shortcodes">This page used <a href="/WikiGameToolkit" class="internal">WikiGameToolkit</a> shortcodes, which are not supported in this version of the site.</div><h3><a href="/TromaNightAdventure" class="internal">TromaNightAdventure</a></h3><h4>You Have Won!</h4><hr /><strong>CONGRATULATIONS!</strong> You have won <a href="/TromaNightAdventure" class="internal">TromaNightAdventure</a>!  <hr /><h4>Score Breakdown</h4><h5>People At <a href="/TromaNight" class="internal">TromaNight</a></h5><ul><li> </li><li> </li><li> </li><li> </li><li> </li><li> <h5><a href="/TromaNight" class="internal">TromaNight</a> Films</h5><li> </li><li> </li><li> </li><li> </li><li> <h5><a href="/TromaNight" class="internal">TromaNight</a> Refreshments</h5><li> </li><li> </li><li> </li><li> <h5>Pantycelyn Rescue</h5>      <h5><a href="/Rocks" class="internal broken">Rocks</a> And The <a href="/RockMonkey" class="internal">RockMonkey</a></h5>   <h5>Cool Extras</h5><li> </li><li>  <h5>Death And Dying</h5><li> <hr /><h3>Final Score: <strong> points</strong>!</h3><h4>Max. Score: <strong>175 points</strong>!</h4>Don&#39;t forget to leave a comment to tell the world how you did!<hr /><strong>What next?</strong></li><li> <a href="/TromaNightAdventure" class="internal">Play again</a></li><li> <a href="/WikiGames" class="internal">Play other WikiGames</a></li><li> <a href="/WikiGameToolkit" class="internal">Learn about the WikiGameToolkit</a></li><li> <a href="/DanHuntley" class="internal">See the page of TromaNightAdventure&#39;s author, DanHuntley</a></ul>
   </section>
   <footer>
       Created by <a href="/DanHuntley">DanHuntley</a> |
@@ -69,6 +86,7 @@ I'm going to try and rescue Ruth myself, feel cheated not having done it. Onward
     </main>
     <footer>
       <a href="https://creativecommons.org/publicdomain/zero/1.0/" rel="license"><img src="/images/cc0.png" alt="CC0 - Public Domain" /></a>
+      <a href="#" class="show-raw">Show Raw</a>
     </footer>
 
     <script src="/javascripts/site.js"></script>

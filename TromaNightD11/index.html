@@ -18,8 +18,42 @@
       <h1><a href="/">RockMonkey</a></h1>
     </header>
     <main>
-      <script type="" id="raw">
-  
+      <script type="text/plain" id="raw">==== TromaNightAdventure ====
+=== DanHuntley ===
+----
+**&quot;How am I doing?&quot;**
+
+Dan assesses your progress: {{SetToken token=&quot;CanWin&quot; value=&quot;1&quot;}}
+
+----
+== TromaNight Stars ==
+You need to get &#x2F;&#x2F;three&#x2F;&#x2F; TromaNight stars to join you, [[ClaireMelton Claire]], and I here at TheFlat. More stars means more points.
+
+{{Test if=&quot;!hasItem(BrynSalisbury) and !hasItem(PaulMann) and !hasItem(RuthVarley) and !hasItem(MisterJTA) and !hasItem(JonAtkinson) and !hasItem(AndyKeohane)&quot; then=&quot;\nYou haven&#x27;t got **any** of the stars, yet!&quot; else=&quot;The following stars have confirmed that they will be coming:\n~{InvListHas item=~BrynSalisbury&#x2F;PaulMann&#x2F;RuthVarley&#x2F;MisterJTA&#x2F;JonAtkinson&#x2F;AndyKeohane~}~&quot;}}
+
+{{Test if=&quot;countItems(BrynSalisbury&#x2F;PaulMann&#x2F;RuthVarley&#x2F;MisterJTA&#x2F;JonAtkinson&#x2F;AndyKeohane) &lt; 3&quot; then=&quot;**You still need to get more people to come!** ~{SetToken token=~CanWin~ value=~0~}~&quot; else=&quot;**That&#x27;s enough people for a successful TromaNight!**&quot;}}
+----
+== TromaNight Films ==
+You need to get &#x2F;&#x2F;three&#x2F;&#x2F; TromaNight films for us to watch. Extra films mean extra points.
+
+{{Test if=&quot;!hasItem(Really Bad Film) and !hasItem(Really Good Film) and !hasItem(Moderately Good Film) and !hasItem(Arty Film) and !hasItem(Pornographic Film)&quot; then=&quot;\nYou haven&#x27;t found **any** films, yet!&quot; else=&quot;We can watch any of the following films:\n~{InvListHas item=~Really Bad Film&#x2F;Really Good Film&#x2F;Moderately Good Film&#x2F;Arty Film&#x2F;Pornographic Film~}~&quot;}}
+
+{{Test if=&quot;countItems(Really Bad Film&#x2F;Really Good Film&#x2F;Moderately Good Film&#x2F;Arty Film&#x2F;Pornographic Film) &lt; 3&quot; then=&quot;**You still need to get more films!** ~{SetToken token=~CanWin~ value=~0~}~&quot; else=&quot;**That&#x27;s enough films for a successful TromaNight!**&quot;}}
+----
+== TromaNight Refreshments ==
+You need to get pizza to satisfy the people who are coming, and RealAle to drink.
+
+{{Test if=&quot;!hasItem(RealAle) and !hasItem(Pizza With Meat) and !hasItem(Pizza With Vegetables) and !hasItem(Pizza With Everything)&quot; then=&quot;\nYou haven&#x27;t found **any** refreshments, yet!&quot; else=&quot;We&#x27;ll enjoy the following refreshments:\n~{InvListHas item=~RealAle&#x2F;Pizza With Meat&#x2F;Pizza With Vegetables&#x2F;Pizza With Everything~}~&quot;}}
+
+{{Test if=&quot;!hasItem(RealAle) or countItems(Pizza With Meat&#x2F;Pizza With Vegetables&#x2F;Pizza With Everything) &lt; 1&quot; then=&quot;**You haven&#x27;t satisfied the need for refreshments!** ~{SetToken token=~CanWin~ value=~0~}~&quot; else=&quot;**That&#x27;s enough to keep people satisfied!**&quot;}}
+----
+
+&#x2F;&#x2F;&quot;That&#x27;s your progess.&quot;&#x2F;&#x2F; {{Test if=&quot;getToken(CanWin) = 1&quot; then=&quot;\n\n----\n=== Ready To Win! ===\n\nYou&#x27;ve done enough things that you&#x27;re ready to win! If you choose to win, no further score will be recorded, and you will be given a full score chart.\n----&quot;}}
+
+----
+**What next?**
+~- {{Test if=&quot;getToken(CanWin) = 1&quot; then=&quot;**[[TromaNight230 WIN THE GAME!!!]]**&quot; else=&quot;**WIN THE GAME!!!** (you haven&#x27;t satisified the criteria to make this link available)&quot;}}
+~- [[TromaNightD01 &quot;Back to it, then!&quot;]]
 </script>
 
 <article>
@@ -47,6 +81,7 @@ Dan assesses your progress: <hr /><h5><a href="/TromaNight" class="internal">Tro
     </main>
     <footer>
       <a href="https://creativecommons.org/publicdomain/zero/1.0/" rel="license"><img src="/images/cc0.png" alt="CC0 - Public Domain" /></a>
+      <a href="#" class="show-raw">Show Raw</a>
     </footer>
 
     <script src="/javascripts/site.js"></script>

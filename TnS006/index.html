@@ -18,9 +18,15 @@
       <h1><a href="/">RockMonkey</a></h1>
     </header>
     <main>
-      <script type="" id="raw">
-  
-</script>
+      <script type="text/plain" id="raw">======Western Gate======
+
+You are at one of the town gates. To the East is the marketplace where you first arrived, to the west is a dirt track leading into the swamp. To north and south the town wall stretches on; although it is 15 feet high and topped with spikes and shards of broken glass, somebody has painted it sunshine yellow with stencils of little pink pigs.
+
+{{Test if=&quot;(getToken(wanted) = 0) and (getToken(guardGone) = 0)&quot; then=&quot;In front of you, there is a large gateway. The oak gate stands open; a small sign pinned to the outside reads &#x27;Thank-You For Not Being Miserable In Our Town&#x27;. A guard in a comically over-sized helmet looks up at you disinterestedly, then returns to his task of carving his initials into the wall.&quot;}}{{Test if=&quot;(getToken(wanted) = 0) and (getToken(guardGone) = 1)&quot; then=&quot;The gate stands open. Next to it, you can see the graffiti the guard was working on earlier. It reads: &#x27;Freedom is Misery&#x27;. Somebody has ripped down the sign that used to be pasted to the gate.&quot;}}{{Test if=&quot;(getToken(wanted) = 1) and (getToken(guardGone) = 0)&quot; then=&quot;The gate is shut and barred, with an efficiency which tells you you&#x27;re not getting through. You hide behind a barrel, in the hope the guard won&#x27;t see you. Although bright blue with a pink butterfly-shaped handle, the sword in his hand looks extremely sharp and probably very painful.&quot;}}{{Test if=&quot;(getToken(wanted) = 1) and (getToken(guardGone) = 1)&quot; then=&quot;The gate is shut and barred, with a huge padlock holding it fast. You try the de-squidgilator on it but it has no effect.&quot;}}
+----
+What now?
+{{Test if=&quot;getToken(guardGone) = 0&quot; then=&quot;[[TnS013 Talk to Guard]]&quot;}}
+{{Test if=&quot;(getToken(inTown) = 0) or (getToken(wanted) = 0)&quot; then=&quot;[[TnS014 Go West]]\n[[TnS015 Go North]]\n[[TnS016 Go South]]&quot;}}{{Test if=&quot;(getToken(inTown) = 1) or (getToken(wanted) = 0)&quot; then=&quot;\n[[TnS002 Go East]]&quot;}}</script>
 
 <article>
   <header>
@@ -43,6 +49,7 @@
     </main>
     <footer>
       <a href="https://creativecommons.org/publicdomain/zero/1.0/" rel="license"><img src="/images/cc0.png" alt="CC0 - Public Domain" /></a>
+      <a href="#" class="show-raw">Show Raw</a>
     </footer>
 
     <script src="/javascripts/site.js"></script>

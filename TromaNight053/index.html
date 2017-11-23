@@ -18,9 +18,13 @@
       <h1><a href="/">RockMonkey</a></h1>
     </header>
     <main>
-      <script type="" id="raw">
-  
-</script>
+      <script type="text/plain" id="raw">==== TromaNightAdventure ====
+=== Under The Pier ===
+----
+You are underneath the pier. It&#x27;s cast-iron legs are visibly rusty, even by what little daylight remains. The beach to the South is submerged, making progress in that direction impossible. The only way you can travel is North.
+----
+**What next?** {{Test if=&quot;hasItem(Picture Of A Rock)&quot; then=&quot;\n~- [[TromaNight084 Look for a rock for Andy]]&quot;}} {{Test if=&quot;hasItem(Picture Of A Rock) and !hasItem(Fake Blue Rock) and !hasItem(AndyKeohane) and hasItem(Blue Paint)&quot; then=&quot;\n~- [[TromaNight239 Paint a rock blue]]&quot;}} {{Test if=&quot;hasItem(Length Of Rope)&quot; then=&quot;\n~- [[TromaNight077 Use your rope to climb up under the pier]]&quot;}}
+~- [[TromaNight052 North, along the beach]]</script>
 
 <article>
   <header>
@@ -40,6 +44,7 @@
     </main>
     <footer>
       <a href="https://creativecommons.org/publicdomain/zero/1.0/" rel="license"><img src="/images/cc0.png" alt="CC0 - Public Domain" /></a>
+      <a href="#" class="show-raw">Show Raw</a>
     </footer>
 
     <script src="/javascripts/site.js"></script>

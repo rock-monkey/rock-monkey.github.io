@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-    <title>WikiScissorsStonePaperStone | Rockmonkey</title>
+    <title>Wiki Scissors Stone Paper Stone | Rockmonkey</title>
     <link href="/stylesheets/site.css" rel="stylesheet" />
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-110134660-1"></script>
     <script>
@@ -18,13 +18,21 @@
       <h1><a href="/">RockMonkey</a></h1>
     </header>
     <main>
-      <script type="" id="raw">
-  
-</script>
+      <script type="text/plain" id="raw">===== [[WikiScissorsStonePaper Scissors, Stone, Paper]] =====
+----
+{{SetToken token=&quot;cthrow&quot; value=&quot;random(1,3)&quot;}}
+{{Image url=&quot;http:&#x2F;&#x2F;www.rockmonkey.org.uk&#x2F;images&#x2F;stone_left.gif&quot; alt=&quot;Stone&quot;}} {{Test if=&quot;getToken(cthrow) = 1&quot; then=&quot;~{Image url=~http:&#x2F;&#x2F;www.rockmonkey.org.uk&#x2F;images&#x2F;scissors_right.gif~ alt=~Scissors~}~&quot;}}{{Test if=&quot;getToken(cthrow) = 2&quot; then=&quot;~{Image url=~http:&#x2F;&#x2F;www.rockmonkey.org.uk&#x2F;images&#x2F;stone_right.gif~ alt=~Stone~}~&quot;}}{{Test if=&quot;getToken(cthrow) = 3&quot; then=&quot;~{Image url=~http:&#x2F;&#x2F;www.rockmonkey.org.uk&#x2F;images&#x2F;paper_right.gif~ alt=~Paper~}~&quot;}}
+
+{{Test if=&quot;getToken(cthrow) = 2&quot; then=&quot;It&#x27;s a draw!&quot;}}{{Test if=&quot;getToken(cthrow) = 3&quot; then=&quot;~{SetToken token=~wsspLose~ value=~+1~}~Paper wraps Stone. You lose.&quot;}}{{Test if=&quot;getToken(cthrow) = 1&quot; then=&quot;~{SetToken token=~wsspWin~ value=~+1~}~Stone blunts Scissors. You win.&quot;}}
+
+=== You {{GetToken token=&quot;wsspWin&quot;}} - {{GetToken token=&quot;wsspLose&quot;}} Me ===
+----
+=== To play again, select your next throw from the options below: ===
+==== [[WikiScissorsStonePaperScissors Scissors]] [[WikiScissorsStonePaperStone Stone]] [[WikiScissorsStonePaperPaper Paper]] ====</script>
 
 <article>
   <header>
-    <h2>WikiScissorsStonePaperStone</h2>
+    <h2>Wiki Scissors Stone Paper Stone</h2>
   </header>
   <section>
     <div class="wikigame-shortcodes">This page used <a href="/WikiGameToolkit" class="internal">WikiGameToolkit</a> shortcodes, which are not supported in this version of the site.</div><h2><a href="/WikiScissorsStonePaper" class="internal">Scissors, Stone, Paper</a></h2><hr /><br />
@@ -42,6 +50,7 @@
     </main>
     <footer>
       <a href="https://creativecommons.org/publicdomain/zero/1.0/" rel="license"><img src="/images/cc0.png" alt="CC0 - Public Domain" /></a>
+      <a href="#" class="show-raw">Show Raw</a>
     </footer>
 
     <script src="/javascripts/site.js"></script>

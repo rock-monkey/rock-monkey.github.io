@@ -18,9 +18,16 @@
       <h1><a href="/">RockMonkey</a></h1>
     </header>
     <main>
-      <script type="" id="raw">
-  
-</script>
+      <script type="text/plain" id="raw">==== TromaNightAdventure ====
+=== Shell Filling Station ===
+----
+You find yourself in the forecourt of the Shell filling station. People are filling up their cars with fuel. On the other side of a glass hatch, an attendant in his early twenties is becoming more and more frustrated with having to push stupidly-shaped items through the slot that seperates him from his customers. {{InvHasOne item=&quot;PaulMann&quot; text=&quot;Paul hums a chorus of &#x27;24 hour garage people&#x27;.&quot;}}
+
+There&#x27;s a manhole-style hatch near the fire extinguishers. {{Test if=&quot;getToken(policeatshell) = 2 and getToken(policepranked) = 0&quot; then=&quot;\n\nThere&#x27;s a heavy police presence around the filling station. It looks like the onwer got wise to your scam.&quot;}}
+----
+**What next?** {{Test if=&quot;getToken(policeatshell) = 2 and getToken(policepranked) = 0&quot; then=&quot;\n~- [[TromaNight249 Talk to the Man-Behind-The-Hatch]]&quot; else=&quot;\n~- [[TromaNight023 Talk to the Man-Behind-The-Hatch]]&quot;}}
+~- {{InvHasNone item=&quot;Manhole Opener&quot; link=&quot;TromaNight024&quot; text=&quot;Open the manhole&quot;}} {{InvHasOne item=&quot;Manhole Opener&quot; link=&quot;TromaNight025&quot; text=&quot;Open the manhole&quot;}}
+~- [[TromaNight003 Return to Alexandra Terrace]]</script>
 
 <article>
   <header>
@@ -41,6 +48,7 @@ There&#39;s a manhole-style hatch near the fire extinguishers. <hr /><strong>Wha
     </main>
     <footer>
       <a href="https://creativecommons.org/publicdomain/zero/1.0/" rel="license"><img src="/images/cc0.png" alt="CC0 - Public Domain" /></a>
+      <a href="#" class="show-raw">Show Raw</a>
     </footer>
 
     <script src="/javascripts/site.js"></script>

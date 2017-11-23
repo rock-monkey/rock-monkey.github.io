@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-    <title>WikiGameToolkitDemoHasOne | Rockmonkey</title>
+    <title>Wiki Game Toolkit Demo Has One | Rockmonkey</title>
     <link href="/stylesheets/site.css" rel="stylesheet" />
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-110134660-1"></script>
     <script>
@@ -18,19 +18,39 @@
       <h1><a href="/">RockMonkey</a></h1>
     </header>
     <main>
-      <script type="" id="raw">
-  
+      <script type="text/plain" id="raw">This page demonstrates the WikiGameToolkit &quot;&quot;&#x27;InvHasOne&#x27;&quot;&quot; directive:
+
+To make a link which only appears if a player has a particular item, use:
+
+%%{{InvHasOne item=&quot;Bowl Of Porridge&quot; link=&quot;WikiGameToolkitDemoEatPorridge&quot; text=&quot;Eat the porridge&quot;}}%%
+
+A link to WikiGameToolkitDemoEatPorridge will only appear, below, if you have the porridge:
+
+{{InvHasOne item=&quot;Bowl Of Porridge&quot; link=&quot;WikiGameToolkitDemoEatPorridge&quot; text=&quot;Eat the porridge&quot;}}
+
+If the link is to appear if the player has &#x2F;&#x2F;any one&#x2F;&#x2F; (or more) of any number of items, use:
+
+%%{{InvHasOne item=&quot;Bowl Of Porridge&#x2F;Wooden Spoon&quot; link=&quot;WikiGameToolkitDemoEatPorridgeOrPlayWithSpoon&quot; text=&quot;Eat the porridge or play with the spoon&quot;}}%%
+
+The following link will appear if you have the porridge, or the spoon, or both.
+
+{{InvHasOne item=&quot;Bowl Of Porridge&#x2F;Wooden Spoon&quot; link=&quot;WikiGameToolkitDemoEatPorridgeOrPlayWithSpoon&quot; text=&quot;Eat the porridge or play with the spoon&quot;}}
+
+----
+To get a Bowl Of Porridge, see WikiGameToolkitDemoPickup - to lose it, see WikiGameToolkitDemoDrop
+To get a Wooden Spoon, see WikiGameToolkitDemoPickup2 - to lose it, see WikiGameToolkitDemoDrop2
+
 </script>
 
 <article>
   <header>
-    <h2>WikiGameToolkitDemoHasOne</h2>
+    <h2>Wiki Game Toolkit Demo Has One</h2>
   </header>
   <section>
-    <div class="wikigame-shortcodes">This page used <a href="/WikiGameToolkit" class="internal">WikiGameToolkit</a> shortcodes, which are not supported in this version of the site.</div>This page demonstrates the <a href="/WikiGameToolkit" class="internal">WikiGameToolkit</a> &quot;&quot;&#39;<a href="/InvHasOne" class="broken internal">InvHasOne</a>&#39;&quot;&quot; directive:<br />
+    <div class="wikigame-shortcodes">This page used <a href="/WikiGameToolkit" class="internal">WikiGameToolkit</a> shortcodes, which are not supported in this version of the site.</div>This page demonstrates the <a href="/WikiGameToolkit" class="internal">WikiGameToolkit</a> &quot;&quot;&#39;<a href="/InvHasOne" class="internal broken">InvHasOne</a>&#39;&quot;&quot; directive:<br />
 To make a link which only appears if a player has a particular item, use:<br />
 <pre></pre><br />
-A link to <a href="/WikiGameToolkitDemoEatPorridge" class="broken internal">WikiGameToolkitDemoEatPorridge</a> will only appear, below, if you have the porridge:<br />
+A link to <a href="/WikiGameToolkitDemoEatPorridge" class="internal broken">WikiGameToolkitDemoEatPorridge</a> will only appear, below, if you have the porridge:<br />
 <br />
 If the link is to appear if the player has <em>any one</em> (or more) of any number of items, use:<br />
 <pre></pre><br />
@@ -49,6 +69,7 @@ To get a Wooden Spoon, see <a href="/WikiGameToolkitDemoPickup2" class="internal
     </main>
     <footer>
       <a href="https://creativecommons.org/publicdomain/zero/1.0/" rel="license"><img src="/images/cc0.png" alt="CC0 - Public Domain" /></a>
+      <a href="#" class="show-raw">Show Raw</a>
     </footer>
 
     <script src="/javascripts/site.js"></script>

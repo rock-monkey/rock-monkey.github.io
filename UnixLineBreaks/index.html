@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-    <title>UnixLineBreaks | Rockmonkey</title>
+    <title>Unix Line Breaks | Rockmonkey</title>
     <link href="/stylesheets/site.css" rel="stylesheet" />
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-110134660-1"></script>
     <script>
@@ -18,16 +18,23 @@
       <h1><a href="/">RockMonkey</a></h1>
     </header>
     <main>
-      <script type="" id="raw">
-  
-</script>
+      <script type="text/plain" id="raw">One fundamental thing that OperatingSystems can&#x27;t agree on, is how to delimit the end of a line in a TextFile.
+
+Unix uses the ASCII character 32, while DOS (and it&#x27;s derivatives, MicrosoftWindows) uses 15.
+
+Here is an easy way to convery a file with DOS linebreaks to a file with Unix linebreaks:
+
+# tr -d &#x27;\15\32&#x27; &lt; dos-format-file &gt; unix-friendly-file
+
+----
+[[BoringTechyPages See other BoringTechyPages]]</script>
 
 <article>
   <header>
-    <h2>UnixLineBreaks</h2>
+    <h2>Unix Line Breaks</h2>
   </header>
   <section>
-    One fundamental thing that <a href="/OperatingSystems" class="broken internal">OperatingSystems</a> can&#39;t agree on, is how to delimit the end of a line in a <a href="/TextFile" class="internal">TextFile</a>.<br />
+    One fundamental thing that <a href="/OperatingSystems" class="internal broken">OperatingSystems</a> can&#39;t agree on, is how to delimit the end of a line in a <a href="/TextFile" class="internal">TextFile</a>.<br />
 Unix uses the ASCII character 32, while DOS (and it&#39;s derivatives, <a href="/MicrosoftWindows" class="internal">MicrosoftWindows</a>) uses 15.<br />
 Here is an easy way to convery a file with DOS linebreaks to a file with Unix linebreaks:<br />
 # tr -d &#39;\15\32&#39; &lt; dos-format-file &gt; unix-friendly-file<hr /><a href="/BoringTechyPages" class="internal">See other BoringTechyPages</a><div class="comments"><blockquote class="comment"><div class="body">And some use both a carriage return AND a line feed.<br />
@@ -45,6 +52,7 @@ What gives?</div><cite><a href="/teifi.aber.ac.uk">teifi.aber.ac.uk</a></cite></
     </main>
     <footer>
       <a href="https://creativecommons.org/publicdomain/zero/1.0/" rel="license"><img src="/images/cc0.png" alt="CC0 - Public Domain" /></a>
+      <a href="#" class="show-raw">Show Raw</a>
     </footer>
 
     <script src="/javascripts/site.js"></script>

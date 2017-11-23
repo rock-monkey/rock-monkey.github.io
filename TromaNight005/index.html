@@ -18,9 +18,15 @@
       <h1><a href="/">RockMonkey</a></h1>
     </header>
     <main>
-      <script type="" id="raw">
-  
-</script>
+      <script type="text/plain" id="raw">==== TromaNightAdventure ====
+=== Chalybeate Street ===
+----
+You are on Chalybeate Street, between The Mecca coffee house and the hardware store. {{InvHasNone item=&quot;Manhole Opener&quot; text=&quot;There is a manhole opener here.&quot;}} To the North you can see Great Darkgate Street and NatWest bank. To the South is Alexandra Terrace - you can see the Shell filling station and the roundabout. To the East is CambrianPlace and, of course, TheFlat.
+----
+**What next?** {{Test if=&quot;!hasItem(Manhole Opener)&quot; then=&quot;\n~- [[TromaNight005a Take the manhole cover opener]]&quot;}}
+~- [[TromaNight001 Head East, along Cambrian Place]]
+~- [[TromaNight006 Head North, to Great Darkgate Street]]
+~- [[TromaNight003 Head South, to Alexandra Terrace]]</script>
 
 <article>
   <header>
@@ -40,6 +46,7 @@
     </main>
     <footer>
       <a href="https://creativecommons.org/publicdomain/zero/1.0/" rel="license"><img src="/images/cc0.png" alt="CC0 - Public Domain" /></a>
+      <a href="#" class="show-raw">Show Raw</a>
     </footer>
 
     <script src="/javascripts/site.js"></script>

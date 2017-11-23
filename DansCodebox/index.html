@@ -18,9 +18,33 @@
       <h1><a href="/">RockMonkey</a></h1>
     </header>
     <main>
-      <script type="" id="raw">
-  
-</script>
+      <script type="text/plain" id="raw">==== DansCodebox ====
+
+This is a place where DanHuntley will be playing with the various new plug-ins he&#x27;s writing as part of the WikiGameToolkit.
+
+----
+{{SetToken token=&quot;codebox_a&quot; value=&quot;3&quot;}}
+{{SetToken token=&quot;codebox_b&quot; value=&quot;5&quot;}}
+{{Test if=&quot;getToken(codebox_a) &gt; getToken(codebox_b)&quot; then=&quot;A is greater than B&quot; else=&quot;A is **not** greater than B&quot;}}
+{{Test if=&quot;getToken(codebox_b) &gt; getToken(codebox_a)&quot; then=&quot;B is greater than A&quot; else=&quot;B is **not** greater than A&quot;}}
+----
+{{Test if=&quot;true&quot; then=&quot;ONE&quot;}}
+{{Test if=&quot;false&quot; then=&quot;TWO&quot;}}
+{{Test if=&quot;true and true&quot; then=&quot;[[DanHuntley THREE]]&quot;}}
+{{Test if=&quot;((true and false))&quot; then=&quot;FOUR&quot;}}
+{{Test if=&quot;((true and false) or true)&quot; then=&quot;FIVE&quot;}}
+{{Test if=&quot;hasItem(Gribble)&quot; then=&quot;You have a **Gribble**!&quot;}}
+{{Test if=&quot;hasItem(Pyjamas)&quot; then=&quot;You have some **Pyjamas**!&quot;}}
+{{Test if=&quot;hasItem(Gribble) and hasItem(Pyjamas)&quot; then=&quot;You have **Gribble** and **Pyjamas**!&quot;}}
+----
+{{Test if=&quot;hasItem(Gribble) or hasItem(Pyjamas)&quot; then=&quot;You have **Gribble** or **Pyjamas**!&quot; else=&quot;You have neither **Gribble** nor **Pyjamas**!&quot;}}
+----
+{{Test if=&quot;hasItem(Gribble) and !hasItem(Pyjamas)&quot; then=&quot;You have **Gribble** but no **Pyjamas**!&quot;}}
+{{Test if=&quot;true&quot; then=&quot;~{Test if=~false~ then=~Alpha~ else=~Beta~}~&quot; else=&quot;Gamma&quot;}}
+{{Test if=&quot;!hasItem(Gribble)&quot; then=&quot;You have no **Gribble**&quot;}}
+{{Test if=&quot;true&quot; then=&quot;&#x2F;&#x2F;This&#x2F;&#x2F; is a **test**! ~{InvPickup item=~Gribble~}~\n\nYay!&quot;}}
+----
+Read more about the WikiGameToolkit, WikiGames, etc.</script>
 
 <article>
   <header>
@@ -53,6 +77,7 @@
     </main>
     <footer>
       <a href="https://creativecommons.org/publicdomain/zero/1.0/" rel="license"><img src="/images/cc0.png" alt="CC0 - Public Domain" /></a>
+      <a href="#" class="show-raw">Show Raw</a>
     </footer>
 
     <script src="/javascripts/site.js"></script>

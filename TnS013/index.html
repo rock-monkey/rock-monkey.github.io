@@ -18,9 +18,13 @@
       <h1><a href="/">RockMonkey</a></h1>
     </header>
     <main>
-      <script type="" id="raw">
-  
-</script>
+      <script type="text/plain" id="raw">======Western Gate======
+
+You walk over to the guard. {{Test if=&quot;getToken(wanted) = 0&quot; then=&quot;He doesn&#x27;t even turn at first, making it quite clear that if you want to talk, you&#x27;re going to have to make the first move&quot; else=&quot;He looks at you suspiciously, and raises the blue sword. You try to duck back out of sight, but he just keeps coming towards you. As he moves, you catch sight of a poster behind him. It has a large picture of you, with the legend, &#x27;Wanted&#x27;.&quot;}}
+
+----
+What now?
+[[TnS006 Leave]]{{Test if=&quot;getToken(wanted) = 1&quot; then=&quot;\n[[TnS017 Get Arrested]]&quot; else=&quot;\nTalk: \n[[TnS018 &#x27;Well, this is a nice town!&#x27;]]\n[[TnS019 &#x27;Did you order a super-squirrel?&#x27;]]\n[[TnS020 &#x27;What are you writing?&#x27;]]&quot;}}{{Test if=&quot;(getToken(wanted) = 0) and (getToken(character) = 0) and (getToken(saltQuest) = 0)&quot; then=&quot;\n[[TnS021 &#x27;Do you have any salt?&#x27;]]&quot;}}</script>
 
 <article>
   <header>
@@ -41,6 +45,7 @@
     </main>
     <footer>
       <a href="https://creativecommons.org/publicdomain/zero/1.0/" rel="license"><img src="/images/cc0.png" alt="CC0 - Public Domain" /></a>
+      <a href="#" class="show-raw">Show Raw</a>
     </footer>
 
     <script src="/javascripts/site.js"></script>
