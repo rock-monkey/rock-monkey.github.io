@@ -1,7 +1,55 @@
-body {
-  background: #fff;
-  color: #000; }
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700,700i");
+a {
+  color: #0992b5; }
+  a:focus, a:hover {
+    color: #076b84; }
 
-textarea {
-  width: 100%;
-  min-height: 26em; }
+aside {
+  background: #f4f4f4;
+  float: right;
+  width: 30%; }
+
+body {
+  background: #ffffff;
+  color: #0c0408;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 15px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: 'Open Sans', sans-serif;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box; }
+  body > * {
+    width: 95%;
+    max-width: 980px; }
+  body > header, body > footer {
+    background: #517438;
+    color: #f4f4f4;
+    padding: 15px; }
+    body > header h1, body > footer h1 {
+      margin: 0; }
+    body > header a, body > footer a {
+      color: #ffffff;
+      text-decoration: none; }
+      body > header a:focus, body > header a:hover, body > footer a:focus, body > footer a:hover {
+        color: #ffffff;
+        text-decoration: underline; }
+  body > main {
+    pading: 15px 0; }
+    body > main header {
+      margin: 15px 0; }
+      body > main header h2 {
+        margin: 0; }
+    body > main footer {
+      clear: both;
+      text-align: center;
+      font-size: 80%;
+      color: gray;
+      padding: 8px 0 15px; }
