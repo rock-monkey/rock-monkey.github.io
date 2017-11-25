@@ -239,21 +239,29 @@ CategoryWiki</script>
   </header>
   <section>
     <h4>The Wiki Formatting Guide</h4>Anything between 2 sets of double-quotes is ignored and presented exactly as typed (that means the formatting commands below are ignored whenever surrounded by double double-quotes.)<br />
+<br />
 Once you&#39;ve read through this, test your formatting skills in the <a href="/SandBox" class="internal">SandBox</a>.<hr /><h4>Basic formatting:</h4>	&quot;&quot;<strong>I&#39;m bold text!</strong>&quot;&quot;<br />
 	<strong>I&#39;m bold text!</strong><br />
+<br />
 	&quot;&quot;<em>I&#39;m italic text!</em>&quot;&quot;<br />
 	<em>I&#39;m italic text!</em><br />
+<br />
 	&quot;&quot;And I&#39;m <u>underlined</u>!&quot;&quot;<br />
 	And I&#39;m <u>underlined</u>!<br />
+<br />
 	&quot;&quot;<pre>monospace text</pre>&quot;&quot;<br />
 	<pre>monospace text</pre><br />
+<br />
 	&quot;&quot;&#39;&#39;highlight text&#39;&#39;&quot;&quot; (using 2 single-quotes)<br />
 	&#39;&#39;highlight text&#39;&#39;<br />
+<br />
 	&quot;&quot;<strike>Strike through text</strike>&quot;&quot;<br />
 	<strike>Strike through text</strike><br />
+<br />
 	&quot;&quot;Press <div class="button">ANY KEY</div>&quot;&quot;<br />
 	Press <div class="button">ANY KEY</div>	&quot;&quot;<center>Center text</center>&quot;&quot;<br />
 	<center>Center text</center><br />
+<br />
  <h4>Headers:</h4>	&quot;&quot;<h1>Really big header</h1>&quot;&quot;<br />
 	<h1>Really big header</h1>	<br />
 	&quot;&quot;<h2>Rather big header</h2>&quot;&quot;<br />
@@ -265,20 +273,26 @@ Once you&#39;ve read through this, test your formatting skills in the <a href="/
 	&quot;&quot;<h5>Smallish header</h5>&quot;&quot; <br />
 	<h5>Smallish header</h5><h4>Horizontal separator:</h4>	&quot;&quot;----&quot;&quot;<hr /><h4>Forced line break:</h4>	&quot;&quot;---&quot;&quot;<br />
 ---<hr /><h4>Lists / Indents:</h4>Indent text using <strong>4</strong> spaces (which will auto-convert into tabs) or using &quot;~&quot;. To make bulleted / ordered lists, use the following codes (you can use 4 spaces instead of &quot;~&quot;):<br />
+<br />
 &quot;&quot;<ul><li> bulleted list:&quot;&quot;</li></ul>	- bulleted list<br />
 	- Line two<br />
+<br />
 &quot;&quot;~1) numbered list:&quot;&quot;<br />
 	1) numbered list<br />
 	1) Line two<br />
+<br />
 &quot;&quot;~A) Using uppercase characters:&quot;&quot;<br />
 	A) Using uppercase characters<br />
 	A) Line two<br />
+<br />
 &quot;&quot;~a) Using lowercase characters:&quot;&quot;<br />
 	a) Using lowercase characters<br />
 	a) Line two<br />
+<br />
 &quot;&quot;~I) using uppercase roman numerals:&quot;&quot;<br />
 	I) using Latin numbers<br />
 	I) Line two<br />
+<br />
 &quot;&quot;~i) using lowercase roman numerals:&quot;&quot;<br />
 	i) using Latin numbers<br />
 	i) Line two<hr /><h4>Wiki Extensions:</h4><h5>Images:</h5>To place images on a Wiki page, use:<br />
@@ -286,16 +300,24 @@ Once you&#39;ve read through this, test your formatting skills in the <a href="/
 <a href="/RecentChanges"><img src="images/dvdvideo.gif" alt="dvd logo" class="center" /></a><br />
 Links can be external, or internal Wiki links. You don&#39;t have to enter a link at all, and in that case just an image will be inserted. You can also use the classes &#39;left&#39; and &#39;right&#39; to float images left and right. You don&#39;t need to use all those attributes, only url is essential.<h5>Tables:</h5>To create a table use this code:<br />
 &quot;&quot;<div>UNKNOWN SHORTCODE: table ({&quot;columns&quot;=&gt;&quot;3&quot;, &quot;cellpadding&quot;=&gt;&quot;1&quot;, &quot;cells&quot;=&gt;&quot;BIG;GREEN;FROGS;yes;yes;no;no;no;###&quot;})</div>&quot;&quot; to give:<br />
+<br />
 <div>UNKNOWN SHORTCODE: table ({&quot;columns&quot;=&gt;&quot;3&quot;, &quot;cellpadding&quot;=&gt;&quot;1&quot;, &quot;cells&quot;=&gt;&quot;BIG;GREEN;FROGS;yes;yes;no;no;no;###&quot;})</div><br />
+<br />
 &quot;&quot;###&quot;&quot; means the cell is empty.<h5>Coloured Text:</h5>&quot;&quot;<span style="color: blue">This is a test.</span>&quot;&quot; gives:<br />
+<br />
 <span style="color: blue">This is a test.</span><br />
+<br />
 If you want to use hex values:<br />
+<br />
 &quot;&quot;<span style="color: ">This is another test.</span>&quot;&quot; to give:<br />
+<br />
 <span style="color: ">This is another test.</span><br />
 	<hr /> <strong>Left floated box - use two &lt; signs before and after the block</strong><br />
 	&lt;&lt;Some text in a floated box hanging around&lt;&lt;Some more text as a filler. Some more text as a filler. Some more text as a filler. Some more text as a filler. Some more text as a filler. Some more text as a filler. Some more text as a filler. Some more text as a filler.<br />
+<br />
 	<strong>Right floated box, use two &gt; characters before and after the block</strong><br />
 	<aside>Some text in a floated box hanging around</aside>Some more text as a filler. Some more text as a filler. Some more text as a filler. Some more text as a filler. Some more text as a filler. Some more text as a filler. Some more text as a filler. Some more text as a filler.<br />
+<br />
 	&quot;&quot;Use ::c::  to clear floated blocks...&quot;&quot;<hr /><h4>Code Formatters:</h4>&quot;&quot;<pre>code</pre>:&quot;&quot;<br />
 %%<br />
 int main(int arc,char **argv)<br />
@@ -305,11 +327,14 @@ int main(int arc,char **argv)<br />
 	return 0;<br />
 }<br />
 %%<br />
+<br />
 	&quot;&quot;<pre>(ini) INI file contents</pre>:&quot;&quot;<br />
 %%(ini)<br />
 ; Menu specification file for Opera 7.0<br />
+<br />
 [Version]<br />
 File Version=2<br />
+<br />
 [Info]  #background info<br />
 Name=Munin++ Menu<br />
 Description=Munin++ Menu<br />
@@ -324,18 +349,23 @@ phpinfo();<br />
 &quot;;<br />
 print &quot;&quot;;?&gt;<br />
 %%<br />
+<br />
 	&quot;&quot;<pre>(email) Email message</pre>:&quot;&quot; <br />
 %%(email) <br />
 Hi!<aside>&gt;&gt; My Llama loves foot massage.<br />
 </aside>&gt; You really think so?<br />
 &gt;&gt; Yes, I know he does.<br />
 &gt;Are you sure?<br />
+<br />
 Of course, yes!<br />
+<br />
 Mr. Scruff<br />
 %%<hr /><h4>Forced links:</h4>	&quot;&quot;<a href="http://wikka.jsnx.com" class="external">http://wikka.jsnx.com</a>&quot;&quot;<br />
 	<a href="http://wikka.jsnx.com" class="external">http://wikka.jsnx.com</a><br />
+<br />
 	&quot;&quot;<a href="http://wikka.jsnx.com" class="external">My Wiki Site</a>&quot;&quot;<br />
 	<a href="http://wikka.jsnx.com" class="external">My Wiki Site</a><hr /><h4>Inter Wiki Links:</h4>	See the <a href="/InterWiki" class="internal">InterWiki</a> page for a full list of available engines. Here are some examples:<br />
+<br />
 	<a href="/Wikipedia" class="internal auto-fixed">WikiPedia</a>:Perception<br />
 	<a href="/CssRef" class="internal broken">CssRef</a>:overflow<br />
 	Google:CSS<br />

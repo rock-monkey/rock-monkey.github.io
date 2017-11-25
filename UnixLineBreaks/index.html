@@ -35,8 +35,11 @@ Here is an easy way to convery a file with DOS linebreaks to a file with Unix li
   </header>
   <section>
     One fundamental thing that <a href="/OperatingSystems" class="internal broken">OperatingSystems</a> can&#39;t agree on, is how to delimit the end of a line in a <a href="/TextFile" class="internal">Text File</a>.<br />
+<br />
 Unix uses the ASCII character 32, while DOS (and it&#39;s derivatives, <a href="/MicrosoftWindows" class="internal">Microsoft Windows</a>) uses 15.<br />
+<br />
 Here is an easy way to convery a file with DOS linebreaks to a file with Unix linebreaks:<br />
+<br />
 # tr -d &#39;\15\32&#39; &lt; dos-format-file &gt; unix-friendly-file<hr /><a href="/BoringTechyPages" class="internal">See other BoringTechyPages</a>
   </section>
   <footer>
