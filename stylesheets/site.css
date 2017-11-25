@@ -104,3 +104,14 @@ img.centre, img.center {
     color: #333; }
     .button a:hover {
       color: #000; }
+
+.wikigame-shortcodes {
+  background: #f5bdbd;
+  padding: 15px 25px;
+  border: 2px solid #cb1212;
+  border-radius: 8px; }
+
+.randomlink a {
+  display: none; }
+  .randomlink a:first-child {
+    display: inherit; }
